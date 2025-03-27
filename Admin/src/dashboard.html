@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+    <meta name="theme-color" content="#f7f7f7">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/Admin/src/style.css">
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <script src="./chart.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h4 class="text-center fw-bold mt-2">Welcome Admin</h4>
+
+        <div class="container px-lg-5">
+            <h5 class="text-black-50 mt-4">Overview this Month</h5>
+            <hr>
+            <div class="row row-cols-2 row-cols-md-3 gx-lg-5 gy-3 overviews">
+                <div class="col">
+                    <div class="card h-100  shadow text-white rounded-4 shortcuts" id="houses" onclick="ShowProperties()">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center justify-content-evenly">
+                                <img src="/Admin/assets/Neighborhood.png" alt="">
+                                <div class="d-flex flex-column align-items-center">
+                                    <h1 class="fw-bolder fs-1">20</h1>
+                                    <span class="fw-bold">Houses</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-evenly rounded-4 bg-danger">
+                            <span>View more</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" width="24px" fill="whitesmoke"
+                                viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path
+                                    d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow  text-white rounded-4 shortcuts" id="tenants" onclick="ShowTenants()">
+                        <div class="card-body ">
+                            <div class="d-flex align-items-center justify-content-evenly">
+                                <img src="/Admin/assets/Tenant.png" alt="">
+                                <div class="d-flex flex-column align-items-center">
+                                    <h1 class="fw-bolder fs-1">18</h1>
+                                    <span class="fw-bold">Tenants</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-evenly rounded-4 bg-primary ">
+                            <span>View more</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" width="24px" fill="whitesmoke"
+                                viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path
+                                    d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card  h-100 shadow text-white  rounded-4 shortcuts" id="payments" onclick="ShowPayments()">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center justify-content-evenly">
+                                <img src="/Admin/assets/Online Payment.png" alt="">
+                                <div class="d-flex flex-column align-items-center">
+                                    <h1 class="fw-bolder fs-1">14</h1>
+                                    <span class="fw-bold">Paid</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-evenly bg-success rounded-4">
+                            <span>View more</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" width="24px" fill="whitesmoke"
+                                viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path
+                                    d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h5 class="text-black-50 mt-4">Monthly History</h5>
+            <hr>
+        </div>
+        <div class=" container mb-3" style="width: 100%; height: 300px; margin: auto;">
+            <canvas id="myChart" class=" w-100"></canvas>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <script src="/Admin/src/script.js"></script>
+</body>
+
+</html>
