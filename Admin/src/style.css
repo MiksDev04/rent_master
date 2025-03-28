@@ -100,9 +100,13 @@ body{
     }
 }
 /* Toggle Button */
-.toggle-btn {
+#toggleSidebar {
     font-size: 24px;
     cursor: pointer;
+    
+    &:hover{
+        background-color: #e0f1f7;
+    }
 }
 /* Main Content */
 .content {
