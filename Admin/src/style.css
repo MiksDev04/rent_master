@@ -100,9 +100,19 @@ body{
     }
 }
 /* Toggle Button */
-.toggle-btn {
+#toggleSidebar {
     font-size: 24px;
     cursor: pointer;
+    
+    &:hover{
+        background-color: #e0f1f7;
+    }
+}
+.hover-btn{
+    &:hover{
+        background-color: #7e7e7e;
+        transition: .2s;
+    }
 }
 /* Main Content */
 .content {
@@ -129,4 +139,13 @@ body{
 .overviews .shortcuts:hover{
     opacity: .8;
     transition: .3s ease-in-out;
+}
+
+
+/* Text Alignments */
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
 }
