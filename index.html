@@ -17,9 +17,9 @@
     <!-- Sidebar -->
     <div class="sidebar z-3 bg-white" id="sidebar">
         <div class="text-center d-flex align-items-center justify-content-between">
-            <h2>
-                <a href="#" class=" fs-3  fw-bolder text-primary">Rent Master</a>
-            </h2>
+            <div class="">
+                <img  src="./Admin/assets/group.png" width="140" height="70" alt="Logo-image">
+            </div>
             <a href="#" id="closeSidebar" class=" d-lg-none">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                     fill="#555555">
@@ -74,15 +74,23 @@
                 </button>
             </form>
             <div class=" d-flex align-items-center">
-                <button class=" btn ">
-                    <svg class="notif-bell" fill="black" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
-                        width="24px" fill="#555555">
-                        <path
-                            d="M160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160Zm320-300Zm0 420q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-280h320v-280q0-66-47-113t-113-47q-66 0-113 47t-47 113v280Z" />
-                    </svg>
-                </button>
-                |
-                <button class="btn d-flex align-items-center gx-2">
+                <details>
+                    <summary class="list-unstyled btn">
+                            <svg class="notif-bell" fill="black" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                width="24px" fill="#555555">
+                                <path
+                                    d="M160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160Zm320-300Zm0 420q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-280h320v-280q0-66-47-113t-113-47q-66 0-113 47t-47 113v280Z" />
+                            </svg>
+                    </summary>
+                    <div class=" container bg-body-tertiary rounded-3 shadow-sm position-fixed w-25 px-3 py-2" style="right: 100px;">
+                        <ul class=" list-unstyled text-black-50 d-grid gap-2">
+                            <li class="border-bottom border-1"> <strong> New Payment Received</strong> : Tenant John Doe has paid ₱10,000 for March 2025 on March 28, 2025 at 10:30 AM. Please verify the transaction.</li>
+                            <li class="border-bottom border-1"> <strong> New Payment Received</strong> : Tenant George Peterson has paid ₱7,000 for April 2025 on April 28, 2025 at 2:15 PM. Please verify the transaction.</li>
+                            <li class="border-bottom border-1"> <strong> New Payment Received</strong> : Tenant Marc Eihenburg has paid ₱13,000 for March 2025 on March 13, 2025 at 8:45 AM. Please verify the transaction.</li>
+                        </ul>
+                    </div>
+                </details>
+                |<button class="btn d-flex align-items-center gx-2">
                     <svg class=" profile" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960"
                         width="30px" fill="#555555">
                         <path
