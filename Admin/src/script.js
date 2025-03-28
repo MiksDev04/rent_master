@@ -98,7 +98,7 @@ sidebar.addEventListener('click', (event) => {
 
 // Ensure the chart is initialized when the page loads
 window.addEventListener('load', () => {
-    loadPage('./Admin/src/reports.html');
+    loadPage('./Admin/src/dashboard.html');
 });
 
 function ChangeNavigationFocus(btnClick) {
