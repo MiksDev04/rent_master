@@ -107,12 +107,15 @@ body{
     &:hover{
         background-color: #e0f1f7;
     }
+<<<<<<< HEAD
 }
 .hover-btn{
     &:hover{
         background-color: #7e7e7e;
         transition: .2s;
     }
+=======
+>>>>>>> bdeb31d23221c5e7a8c3065feae5f13b0aac696c
 }
 /* Main Content */
 .content {
